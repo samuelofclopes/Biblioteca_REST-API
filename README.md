@@ -37,6 +37,18 @@ Executar a aplicação - (python3 app.py)
 
 A API estará disponível em `http://localhost:8000`
 
+FrontEnd
+============================================================================
+
+/login - Página de Login
+
+/singup - Página de Sign Up
+
+/dashboard - Página principal after login
+
+
+
+
 Endpoints
 ============================================================================
 
@@ -70,9 +82,10 @@ O meu aprendizado ao longo de este projeto
 ===========================================================================
 
 Neste projeto adquiri varias competencias uteis, entre elas:
-- REST API - ()
-- RESTful API - (API REST com todas as boas práticas)
+- REST API
+- API
 - CRUD - (Create [POST], Read[GET], Update[PUT], Delete[DELETE])
 - POO básico - ( Isso foi o que eu achei mais importante e interessante Classes e Modelos.)
-- JWT - (Para keys e autenticação segura)
+- JWT - (Para keys e autenticação segura.)
 - SQLALChemy ORM (Bem melhor do que SQL puro como no primeiro servidor.)
+- Minimo de sintaxe de JavaScript - (Principalmente usado para não recarregar a pagina sempre que ouvesse alguma alteração.)

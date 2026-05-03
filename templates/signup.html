@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Biblioteca API</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <h1>Biblioteca API</h1>
+
+    <div class="form-container">
+        <h2>Sign Up</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm_password" placeholder="Confirm Password">
+        <input type="email" id="email" placeholder="Email">
+        <p id="erro" class="erro"></p>
+        
+        <button onclick="fazer_signup()">Registrar</button>
+
+        <p>Já tens conta? <a href="/login">Login</a></p>
+    </div>
+
+    <script src="/static/js/signup.js"></script>
+</body>
+</html>

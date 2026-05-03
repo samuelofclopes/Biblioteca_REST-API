@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Biblioteca API</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca API</h1>
+        <button onclick="logout()" style="width: auto; background-color: #e74c3c;">Sair</button>
+    </header>
+
+    <div class="form-container" style="max-width: 800px;">
+        <h2>Livros Disponíveis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Disponíveis</th>
+                </tr>
+            </thead>
+            <tbody id="livros-lista">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

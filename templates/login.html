@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Biblioteca API</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <h1>Biblioteca API</h1>
+
+    <div class="form-container">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        
+        <p id="erro" class="erro"></p>
+        
+        <button onclick="fazer_login()">Entrar</button>
+
+        <p>Não tens conta? <a href="/signup">Registar</a></p>
+    </div>
+
+    <script src="/static/js/login.js"></script>
+</body>
+</html>
