@@ -1,6 +1,13 @@
 // 1. Função para buscar e listar os livros
 async function carregarLivros() {
     try {
+        const token = localStorage.getItem("token");
+        
+        // Proteção extra: se não houver token, nem tenta o fetch
+        if (!token) {
+            window.location.href = "/login";
+            return;
+        }
         const response = await fetch("/api/items", {
             headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
         });
@@ -35,5 +42,8 @@ function logout() {
 
 }
 
+function ver_perfil() {
+    window.location.href = "/profile";   // Redireciona para o perfil
+}
 // Executa ao carregar a página
 carregarLivros();

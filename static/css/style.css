@@ -59,3 +59,44 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
 }
+/* Container do Cabeçalho */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Título esquerda, Botões direita */
+    align-items: center;            /* Alinhamento vertical */
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 3px solid #3498db;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Grupo de botões */
+.header-actions {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Ajuste específico para os botões do topo não herdarem o width: 100% do resto do site */
+.header-actions button {
+    width: auto;
+    margin-top: 0;
+    padding: 8px 16px;
+}
+
+/* Estilo da Tabela (com linhas) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Cria as linhas do seu desenho */
+    padding: 12px;
+    text-align: center;
+}
+
+table thead {
+    background-color: #f8f9fa;
+}

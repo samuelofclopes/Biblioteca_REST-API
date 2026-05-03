@@ -123,7 +123,7 @@ def login():
 
 
 @app.route("/api/auth/me", methods=["GET"])
-@jwt_required()  # Protege a rota - precisa de JWT token válido.
+@jwt_required()
 def me():
 
     # Ver dados do utilizador autenticado
@@ -221,13 +221,13 @@ def create_item():
         return jsonify({"error": "Title e author são obrigatórios"}), 400 # Bad Request - dados faltando ou inválidos
     
     # Cria novo item
+
     novo_item = Item(
         title=data["title"],
         author=data["author"],
         total_copies=data.get("total_copies", 1)
     )
     novo_item.available_copies = novo_item.total_copies
-    
     # Guarda na BD
     db.session.add(novo_item)
     db.session.commit()
@@ -330,6 +330,10 @@ def signup_page():
 @app.route("/dashboard")
 def dashboard_page():
     return render_template("dashboard.html")
+
+@app.route("/profile")
+def profile_page():
+    return render_template("profile.html")
 # ============================================================================
 # INICIAR APP
 # ============================================================================
